@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `buoi_hoc`
 --
 
-DROP TABLE IF EXISTS `buoi_hoc`;
+
 CREATE TABLE IF NOT EXISTS `buoi_hoc` (
   `ma_buoi_hoc` int NOT NULL AUTO_INCREMENT,
   `ngay_hoc` date NOT NULL,
@@ -58,7 +58,7 @@ INSERT INTO `buoi_hoc` (`ma_buoi_hoc`, `ngay_hoc`, `tiet_bat_dau`, `tiet_ket_thu
 -- Table structure for table `diem_danh`
 --
 
-DROP TABLE IF EXISTS `diem_danh`;
+
 CREATE TABLE IF NOT EXISTS `diem_danh` (
   `ma_buoi_hoc` int NOT NULL,
   `ma_diem_danh` int NOT NULL AUTO_INCREMENT,
@@ -104,7 +104,7 @@ INSERT INTO `diem_danh` (`ma_buoi_hoc`, `ma_diem_danh`, `thoi_gian_diem_danh`, `
 -- Table structure for table `diem_danh_sinh_vien`
 --
 
-DROP TABLE IF EXISTS `diem_danh_sinh_vien`;
+
 CREATE TABLE IF NOT EXISTS `diem_danh_sinh_vien` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `time` datetime(6) DEFAULT NULL,
@@ -237,7 +237,7 @@ INSERT INTO `diem_danh_sinh_vien` (`id`, `time`, `diemdanh_id`, `user_id`, `stat
 -- Table structure for table `lop_sinh_vien`
 --
 
-DROP TABLE IF EXISTS `lop_sinh_vien`;
+
 CREATE TABLE IF NOT EXISTS `lop_sinh_vien` (
   `ma_lop` varchar(255) NOT NULL,
   `ten_lop` varchar(255) NOT NULL,
@@ -260,7 +260,7 @@ INSERT INTO `lop_sinh_vien` (`ma_lop`, `ten_lop`) VALUES
 -- Table structure for table `mon_hoc`
 --
 
-DROP TABLE IF EXISTS `mon_hoc`;
+
 CREATE TABLE IF NOT EXISTS `mon_hoc` (
   `ma_mon_hoc` varchar(255) NOT NULL,
   `ten_mon_hoc` varchar(255) NOT NULL,
@@ -284,7 +284,7 @@ INSERT INTO `mon_hoc` (`ma_mon_hoc`, `ten_mon_hoc`) VALUES
 -- Table structure for table `nguoi_dung`
 --
 
-DROP TABLE IF EXISTS `nguoi_dung`;
+
 CREATE TABLE IF NOT EXISTS `nguoi_dung` (
   `email` varchar(255) DEFAULT NULL,
   `ma_lop` varchar(255) DEFAULT NULL,
@@ -319,7 +319,7 @@ INSERT INTO `nguoi_dung` (`email`, `ma_lop`, `ma_nguoi_dung`, `ma_tai_khoan`, `s
 -- Table structure for table `nguoi_tham_gia`
 --
 
-DROP TABLE IF EXISTS `nguoi_tham_gia`;
+
 CREATE TABLE IF NOT EXISTS `nguoi_tham_gia` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `id_buoihoc` int DEFAULT NULL,
@@ -353,7 +353,7 @@ INSERT INTO `nguoi_tham_gia` (`id`, `id_buoihoc`, `id_nguoidung`, `buoihoc_id`, 
 -- Table structure for table `phong`
 --
 
-DROP TABLE IF EXISTS `phong`;
+
 CREATE TABLE IF NOT EXISTS `phong` (
   `ma_phong` varchar(255) NOT NULL,
   `ten_phong` varchar(255) NOT NULL,
@@ -375,7 +375,7 @@ INSERT INTO `phong` (`ma_phong`, `ten_phong`) VALUES
 -- Table structure for table `tai_khoan`
 --
 
-DROP TABLE IF EXISTS `tai_khoan`;
+
 CREATE TABLE IF NOT EXISTS `tai_khoan` (
   `ma_tai_khoan` varchar(255) NOT NULL,
   `mat_khau` varchar(255) NOT NULL,
