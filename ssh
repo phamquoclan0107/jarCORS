@@ -1,0 +1,3 @@
+sudo docker exec -it mysql8033 mysql -uroot
+sudo docker exec -i mysql8033 mysql -uroot quan_ly_diem_danh_db < /root/mysql_docker/quan_ly_diem_danh_db.sql
+sudo docker exec -i mysql8033 mysql -uroot test < /root/jarCORS/diemdanhstu.sql
