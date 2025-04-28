@@ -116,9 +116,6 @@ CREATE TABLE IF NOT EXISTS `lop_sinh_vien` (
 --
 
 INSERT INTO `lop_sinh_vien` (`ma_lop`, `ten_lop`) VALUES
-('D20_TH09', 'Tin hoc 09'),
-('D21_TH06', 'Tin hoc 06'),
-('D21_TH07', 'Tin hoc 07'),
 ('GV', 'Giang Vien');
 
 -- --------------------------------------------------------
