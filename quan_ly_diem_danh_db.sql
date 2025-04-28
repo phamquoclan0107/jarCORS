@@ -39,8 +39,11 @@ CREATE TABLE IF NOT EXISTS `buoi_hoc` (
   `gv_id` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`ma_buoi_hoc`),
   KEY `FKresnpp25ibokky9xcp7r9nn1e` (`ma_mon_hoc`),
-  KEY `FK1xu8i7qikw0dq270q1ejw8n27` (`ma_phong`)
+  KEY `FK1xu8i7qikw0dq270q1ejw8n27` (`ma_phong`),
+  CONSTRAINT `FKresnpp25ibokky9xcp7r9nn1e` FOREIGN KEY (`ma_mon_hoc`) REFERENCES `mon_hoc` (`ma_mon_hoc`),
+  CONSTRAINT `FK1xu8i7qikw0dq270q1ejw8n27` FOREIGN KEY (`ma_phong`) REFERENCES `phong` (`ma_phong`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 
 --
 -- Dumping data for table `buoi_hoc`
