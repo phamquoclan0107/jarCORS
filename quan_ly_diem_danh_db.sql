@@ -159,9 +159,9 @@ CREATE TABLE IF NOT EXISTS `nguoi_tham_gia` (
 --
 -- Constraints for table `buoi_hoc`
 --
-ALTER TABLE `buoi_hoc`
-  ADD CONSTRAINT `FK1xu8i7qikw0dq270q1ejw8n27` FOREIGN KEY (`ma_phong`) REFERENCES `phong` (`ma_phong`),
-  ADD CONSTRAINT `FKresnpp25ibokky9xcp7r9nn1e` FOREIGN KEY (`ma_mon_hoc`) REFERENCES `mon_hoc` (`ma_mon_hoc`);
+--ALTER TABLE `buoi_hoc`
+--  ADD CONSTRAINT `FK1xu8i7qikw0dq270q1ejw8n27` FOREIGN KEY (`ma_phong`) REFERENCES `phong` (`ma_phong`),
+--  ADD CONSTRAINT `FKresnpp25ibokky9xcp7r9nn1e` FOREIGN KEY (`ma_mon_hoc`) REFERENCES `mon_hoc` (`ma_mon_hoc`);
 
 --
 -- Constraints for table `diem_danh`
