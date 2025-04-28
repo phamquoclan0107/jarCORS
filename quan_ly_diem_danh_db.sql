@@ -17,57 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `quan_ly_diem_danh_db`
---
 
--- --------------------------------------------------------
-
---
--- Table structure for table `buoi_hoc`
---
-
-
-
-
---
--- Dumping data for table `buoi_hoc`
---
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `diem_danh`
---
-
-
-
-
---
--- Dumping data for table `diem_danh`
---
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `diem_danh_sinh_vien`
---
-
-
-
---
--- Dumping data for table `diem_danh_sinh_vien`
---
-
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `lop_sinh_vien`
---
 CREATE TABLE IF NOT EXISTS `tai_khoan` (
   `ma_tai_khoan` varchar(255) NOT NULL,
   `mat_khau` varchar(255) NOT NULL,
@@ -76,12 +26,9 @@ CREATE TABLE IF NOT EXISTS `tai_khoan` (
   PRIMARY KEY (`ma_tai_khoan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `tai_khoan`
---
 
 INSERT INTO `tai_khoan` (`ma_tai_khoan`, `mat_khau`, `ten_tai_khoan`, `role`) VALUES
-('1234', '$2a$10$X.lhuj27aTwEUo9kNiokxexwIEjoVzaUkKD.RROLuSHcqDbuy6IHq', 'nguyenvana', 'admin')
+('1234', '$2a$10$X.lhuj27aTwEUo9kNiokxexwIEjoVzaUkKD.RROLuSHcqDbuy6IHq', 'nguyenvana', 'admin');
 
 
 
@@ -91,27 +38,19 @@ CREATE TABLE IF NOT EXISTS `lop_sinh_vien` (
   PRIMARY KEY (`ma_lop`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `lop_sinh_vien`
---
 
 INSERT INTO `lop_sinh_vien` (`ma_lop`, `ten_lop`) VALUES
 ('GV', 'Giang Vien');
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `mon_hoc`
---
 CREATE TABLE IF NOT EXISTS `phong` (
   `ma_phong` varchar(255) NOT NULL,
   `ten_phong` varchar(255) NOT NULL,
   PRIMARY KEY (`ma_phong`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `phong`
---
+
 
 INSERT INTO `phong` (`ma_phong`, `ten_phong`) VALUES
 ('P01', 'Phòng C801'),
@@ -137,9 +76,7 @@ CREATE TABLE IF NOT EXISTS `mon_hoc` (
   PRIMARY KEY (`ma_mon_hoc`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `mon_hoc`
---
+
 
 CREATE TABLE IF NOT EXISTS `nguoi_dung` (
   `email` varchar(255) DEFAULT NULL,
@@ -187,22 +124,12 @@ CREATE TABLE IF NOT EXISTS `diem_danh` (
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `nguoi_dung`
---
-
-
---
--- Dumping data for table `nguoi_dung`
---
 
 
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `nguoi_tham_gia`
---
+
 CREATE TABLE IF NOT EXISTS `diem_danh_sinh_vien` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `time` datetime(6) DEFAULT NULL,
@@ -228,32 +155,6 @@ CREATE TABLE IF NOT EXISTS `nguoi_tham_gia` (
   KEY `FKtojp2r3lsbk1ssso6oca99og9` (`nguoidung_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `nguoi_tham_gia`
---
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `phong`
---
-
-
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tai_khoan`
---
-
-
-
-
---
--- Constraints for dumped tables
---
 
 --
 -- Constraints for table `buoi_hoc`
